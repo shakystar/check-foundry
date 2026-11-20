@@ -1,0 +1,72 @@
+{
+  "app_commit": "f189f521266f42c6bd05884468292000cee852ed",
+  "guide_commit": "525df2a65d48abf736efd4873ba2b4d276d172a8",
+  "guide_attributes": "docs/modules/ROOT/pages/attributes.adoc",
+  "osv_scanner": "v2.7.1",
+  "semgrep_ce": "v1.186.0",
+  "rules": [],
+  "cases": [
+    {
+      "id": "M0-01",
+      "split": "development",
+      "key": "directoryListingChallenge",
+      "sample": "a.ts",
+      "control": "c.ts",
+      "context": [
+        288,
+        298
+      ],
+      "locations": [
+        290,
+        291
+      ],
+      "fix_file": "data/static/codefixes/directoryListingChallenge_1_correct.ts",
+      "fix_context": [
+        1,
+        2
+      ],
+      "intent": "공개 파일 제공 경로에서 비공개 목록 및 일반 다운로드 처리를 제거한다."
+    },
+    {
+      "id": "M0-02",
+      "split": "holdout",
+      "key": "exposedMetricsChallenge",
+      "sample": "d.ts",
+      "control": "b.ts",
+      "context": [
+        755,
+        760
+      ],
+      "locations": [
+        759
+      ],
+      "fix_file": "data/static/codefixes/exposedMetricsChallenge_3_correct.ts",
+      "fix_context": [
+        1,
+        5
+      ],
+      "intent": "운영 지표 핸들러에 접근 권한을 적용한다. 상위 계층 통제 여부는 이 조각으로 확인할 수 없다."
+    }
+  ],
+  "dependency_controls": [
+    {
+      "path": "dependency-controls/affected/package-lock.json",
+      "sha256": "f7d33d30d8211ae22beabba5b6de37c610558785cb8717d25ccd66837f0f6fc9",
+      "expected_match": true
+    },
+    {
+      "path": "dependency-controls/patched/package-lock.json",
+      "sha256": "7c225d217159672d456aa3e0443d5a4d4d181b295fb9bab154fc6a6f8d351ac7",
+      "expected_match": false
+    }
+  ],
+  "advisory": "GHSA-35jh-r3h4-6jhm",
+  "npm_db": {
+    "url": "https://osv-vulnerabilities.storage.googleapis.com/npm/all.zip?generation=1795149215541630",
+    "generation": "1795149215541630",
+    "last_modified": "2026-11-20T04:33:35Z",
+    "size": 221948865,
+    "md5": "75fcfbf10d103702a7f3eaf2a4767075",
+    "sha256": "8c90890fdf1084e53b2ca925c0b7c1a8a88800caf61a086675a4c379cc90e0c4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "a.ts": {
+    "upstream_path": "server.ts",
+    "first_line": 288,
+    "sha256": "c91d9066650a4c3f504ad0d3de81851b1c01bb52afae77a2190f722788a58e37"
+  },
+  "c.ts": {
+    "upstream_path": "data/static/codefixes/directoryListingChallenge_1_correct.ts",
+    "first_line": 1,
+    "sha256": "533095152a0f1059fffc10d3b7473ddced7fa5123e5b3a159eaebc0a473db863"
+  },
+  "d.ts": {
+    "upstream_path": "server.ts",
+    "first_line": 755,
+    "sha256": "1b888d53ae78212a9a5c3d55d6be6cad1c30e67174f5528348b988161a538178"
+  },
+  "b.ts": {
+    "upstream_path": "data/static/codefixes/exposedMetricsChallenge_3_correct.ts",
+    "first_line": 1,
+    "sha256": "84d159862f8a061623714a1eb83531c478a55d5ca39b652a7b8fb4d1764e284d"
+  }
+}
