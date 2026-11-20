@@ -1,0 +1,11 @@
+{
+  "osv_scanner": "v2.7.1",
+  "npm_db": {
+    "url": "https://osv-vulnerabilities.storage.googleapis.com/npm/all.zip?generation=1795149215541630",
+    "generation": "1795149215541630",
+    "last_modified": "2026-11-20T04:33:35Z",
+    "size": 221948865,
+    "md5": "75fcfbf10d103702a7f3eaf2a4767075",
+    "sha256": "8c90890fdf1084e53b2ca925c0b7c1a8a88800caf61a086675a4c379cc90e0c4"
+  }
+}
